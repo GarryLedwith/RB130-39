@@ -56,7 +56,7 @@ Loop through digits array
     move result to results array
     reassign multipler to multipler * 8
 
-  Add together all elements in results array
+  Sum all digits in results array
   Return sum
 =end
 
