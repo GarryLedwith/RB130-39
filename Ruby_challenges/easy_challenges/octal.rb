@@ -43,9 +43,9 @@ DATA STRUCTURES:
 ALGORITHM:
 Create a class called Octal
 Each instance takes one argument: a string digit
+Create a guard clause for validating input
 
 == to_decimal method ==
-Create a guard clause for validating input
 
 Convert input string into an array of digits
 Create a variable multipler and set to 1
@@ -62,12 +62,10 @@ Loop through digits array
 
 class Octal
   def initialize(digit)
-    @digit = digit
+    @digit = invalid_input?(digit) ? '0' : digit
   end
 
   def to_decimal
-    return 0 if invalid_input?(@digit)
-
     digits_arr = @digit.to_i.digits
     multipler = 1
     results = []
