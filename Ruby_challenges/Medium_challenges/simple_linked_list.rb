@@ -56,7 +56,7 @@ class SimpleLinkedList
     array = []
 
     current_element = head
-    while !current_element.nil?
+    while current_element
       array << current_element.datum
       current_element = current_element.next
     end
@@ -67,7 +67,7 @@ class SimpleLinkedList
     new_list = SimpleLinkedList.new
 
     current_element = head
-    while !current_element.nil?
+    while current_element
       new_list.push(current_element.datum)
       current_element = current_element.next
     end
